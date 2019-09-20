@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="115dp">
+
+    <TextView
+        android:id="@+id/bookNameTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Book Name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/lightblack"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="26dp"
+        android:maxLines="2" />
+
+    <TextView
+        android:id="@+id/publicationTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bookNameTv"
+        android:layout_marginTop="6dp"
+        android:text="Publisher"
+        android:textSize="15sp"
+        android:textColor="@color/lightblack"
+        android:layout_marginStart="10dp" />
+
+    <TextView
+        android:id="@+id/authorTv"
+        android:text="Author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/publicationTv"
+        android:layout_marginTop="6dp"
+        android:textSize="15sp"
+        android:textColor="@color/lightblack"
+        android:layout_marginStart="10dp" />
+
+    <TextView
+        android:id="@+id/locationTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="Location"
+        android:layout_marginTop="22dp"
+        android:textSize="15sp"
+        android:textColor="@color/lightblack"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="16dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightblack"
+        android:alpha="0.2"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

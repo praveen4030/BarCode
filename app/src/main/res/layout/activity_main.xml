@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:background="@color/littlelightgrey">
+
+    <Button
+        android:id="@+id/shell1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Shelve 1"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="36dp"
+        android:background="@drawable/sender_message_layout"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/shell2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Shelve 2"
+        android:layout_marginEnd="36dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/sender_message_layout"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/booksBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:text="Misplaced books"
+        android:background="@drawable/sender_message_layout"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:padding="14dp"
+        android:layout_marginBottom="56dp"/>
+
+    <Button
+        android:id="@+id/userBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:text="Users"
+        android:background="@drawable/sender_message_layout"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:padding="14dp"
+        android:layout_marginBottom="56dp"/>
+
+</RelativeLayout>

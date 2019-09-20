@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerifyActivity"
+    android:visibility="visible">
+
+    <RelativeLayout
+        android:id="@+id/bookRl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:background = "@color/lightgrey">
+
+        <TextView
+            android:id="@+id/bookNameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book Name"
+            android:textSize="27sp"
+            android:textColor="@color/lightblack"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold|italic"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"/>
+
+        <TextView
+            android:id="@+id/publicationTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Publication"
+            android:textSize="20sp"
+            android:layout_below="@id/bookNameTv"
+            android:textColor="@color/lightblack"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/authorTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Author"
+            android:layout_below="@id/publicationTv"
+            android:textSize="19sp"
+            android:textColor="@color/lightblack"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/locationTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location"
+            android:layout_below="@id/authorTv"
+            android:textSize="19sp"
+            android:textColor="@color/lightblack"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/statusTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/locationTv"
+            android:textSize="17sp"
+            android:textColor="@color/lightblack"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="12dp"/>
+
+    </RelativeLayout>
+
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:id="@+id/phoneLayout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="8dp"-->
+<!--        android:background="@drawable/sender_message_layout"-->
+<!--        android:backgroundTint="@color/white"-->
+<!--        android:padding="7dp"-->
+<!--        android:layout_below="@id/bookRl">-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:id="@+id/phone_number_input"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:hint="Mobile Number"-->
+<!--                android:inputType="number"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textColorHint="@color/grey"-->
+<!--                android:textSize="18sp"-->
+<!--                android:background="@null"/>-->
+
+<!--            <Button-->
+<!--                android:id="@+id/verifyBt2"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Verify"-->
+<!--                android:background = "@drawable/sender_message_layout"-->
+<!--                android:layout_below="@id/phone_number_input"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:onClick="verify"/>-->
+
+<!--        </RelativeLayout>-->
+
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+
+
+    <RelativeLayout
+        android:id="@+id/issueRl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <EditText
+            android:id="@+id/codeEt"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your code"
+            android:layout_centerVertical="true"
+            android:layout_margin="16dp"
+            android:background="@drawable/sender_message_layout"
+            android:backgroundTint="@color/littlelightgrey"
+            android:padding="14dp"/>
+
+        <Button
+            android:id="@+id/verifyBt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verify"
+            android:layout_below="@id/codeEt"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/sender_message_layout"
+            android:backgroundTint="@color/greenOk"
+            android:textColor="@color/white"
+            android:layout_marginTop="36dp"
+            android:onClick="verify"/>
+
+    </RelativeLayout>
+</RelativeLayout>
